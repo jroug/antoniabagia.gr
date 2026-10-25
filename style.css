@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Noto+Sans:wght@400;500&display=swap');
+
+:root { color-scheme: light; --paper: #fcf7e9; --ink: #07372c; --sage: #536f60; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100svh; display: flex; flex-direction: column; background: var(--paper); color: var(--ink); font-family: 'Noto Sans', sans-serif; text-align: center; }
+main { width: min(100%, 720px); margin: auto; padding: 56px 24px 40px; }
+.symbol { position: relative; width: clamp(160px, 23vw, 220px); aspect-ratio: 625 / 570; margin: 0 auto 28px; overflow: hidden; mix-blend-mode: multiply; }
+.symbol img { position: absolute; width: 254.24%; max-width: none; height: auto; left: -6.4%; top: -13.158%; }
+h1 { margin: 0 0 15px; font: 700 clamp(28px, 5vw, 42px)/1.35 'Comfortaa', sans-serif; letter-spacing: -1.5px; }
+.profession { margin: 0; color: var(--sage); font: 400 clamp(13px, 2.5vw, 16px)/1.9 'Comfortaa', sans-serif; }
+.coming-soon { display: inline-flex; align-items: center; gap: 9px; margin: 35px 0; color: var(--sage); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
+.coming-soon span { width: 5px; height: 5px; background: #a48a5c; border-radius: 50%; }
+address { max-width: 360px; margin: 0 auto; padding-top: 28px; border-top: 1px solid #bdc5b5; font-style: normal; }
+.phone { display: inline-flex; align-items: center; justify-content: center; gap: 19px; min-height: 48px; color: var(--ink); text-decoration: none; font: 500 clamp(25px, 5vw, 31px)/1.5 'Comfortaa', sans-serif; letter-spacing: -1px; }
+.phone svg { width: 21px; height: 21px; transition: transform .2s; }
+.phone:hover svg { transform: translate(2px, -2px); }
+.phone:hover { color: var(--sage); }
+a:focus-visible { outline: 2px solid var(--sage); outline-offset: 7px; border-radius: 2px; }
+address p { margin: 12px 0 0; color: var(--sage); font-size: 12px; line-height: 1.8; }
+address p span { margin: 0 7px; }
+footer { padding: 16px 24px 25px; color: var(--sage); font-size: 10px; letter-spacing: 2px; }
+@media (max-width: 400px) { main { padding-top: 35px; } .symbol { margin-bottom: 22px; } .coming-soon { margin: 28px 0; } }
+@media (prefers-reduced-motion: reduce) { .phone svg { transition: none; } }
